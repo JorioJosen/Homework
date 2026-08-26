@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>52400186 - NguyenAnhHao</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    .checkbox,
+    .radio {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox input[type="checkbox"],
+    .radio input[type="radio"] {
+        display: none;
+
+    }
+    .checkbox .text,
+    .radio .text {
+        padding-left: 10px;
+        font-size: 15px;
+        color: #212121;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    .checkbox .icon::before,
+    .radio .icon::before {
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .checkbox .icon::before {
+        color: rgb(108, 112, 102);
+        content: "\f096";
+    }
+    .checkbox input[type='checkbox']:checked ~ .icon::before {
+        color: rgba(0, 255, 17, 0.797);
+        content: "\f14a";
+    }
+    .radio .icon::before {
+        color: rgb(108, 112, 102);
+        content: "\f10c";
+    }
+    .radio input[type='radio']:checked ~ .icon::before {
+        color: rgba(0, 255, 17, 0.797);
+        content: "\f192";
+    }
+    </style>
+</head>
+<body>
+    <!-- Checklist -->
+    <div>
+        <label class="checkbox">
+            <input type="checkbox" value="0"/>
+            <span class="icon"></span>
+            <span class="text">Bạn có thích đi chơi không</span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" value="1"/>
+            <span class="icon"></span>
+            <span class="text">Bạn có thích ăn uống không</span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" value="2"/>
+            <span class="icon"></span>
+            <span class="text">Bạn có thích xem phim không</span>
+        </label>
+    </div>
+
+    <!-- Radio Button -->
+    <div>
+        <label class="radio">
+            <input type="radio" name="option" value="0"/>
+            <span class="icon"></span>
+            <span class="text">Rất thích</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="option" value="1"/>
+            <span class="icon"></span>
+            <span class="text">Bình thường</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="option" value="2"/>
+            <span class="icon"></span>
+            <span class="text">Không thích</span>
+        </label>
+    </div>
+</body>
+</html>
