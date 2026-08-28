@@ -1,117 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>52400186 - NguyenAnhHao</title>
-    <style>
-    p {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #212121;
-    }
-    body {
-        background-color: #e7e8ec;
-        width: 1188px;
-        margin: 1rem;
-    }
-    div {
-        display: flex;
-        justify-content: space-between;
-    }
-    .box {
-        width: 188px;
-        height: 270px;
-        background-color: #fff;
-        position: relative;
-    }
-    .box img {
-        background-color: #f5f5f5;
-        width: 188px;
-        height: 188px;
-    }
-    .logo {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 70%;
-        left: 50%;
-    }
-    .logo img {
-        width: 3.5rem;
-        height: 3.5rem;
-        border:#606060 solid 1px;
-    }
-    .description_logo {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 85%;
-        left: 50%;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #212121;
-    }
-    .description {
-        position: absolute;
-        top: 88%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1rem;
-        font-weight: bold;
-        color: #9e9e9e;
-    }
-    </style>
-</head>
-<body>
-    <p>Bài tập 2</p>
-    <div>
-        <div class="box">
-            <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/asus.png">
-            <p class="description">ASUS</p>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/asus-logo.png">
-                <p class="description_logo">ASUS</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/lenovo.png">
-            <p class="description">Lenovo</p>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/lenovo-logo.png">
-                <p class="description_logo">Lenovo</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/acer.png">
-            <p class="description">Acer</p>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/acer-logo.png">
-                <p class="description_logo">Acer</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/iphone.png">
-            <p class="description">iPhone</p>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/iphone-logo.png">
-                <p class="description_logo">iPhone</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/samsung.png">
-            <p class="description">Samsung</p>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/samsung-logo.png">
-                <p class="description_logo">Samsung</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/xiaomi.png">
-            <p class="description">Xiaomi</p>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/xiaomi-logo.png">
-                <p class="description_logo">Xiaomi</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>52400186 - NguyenAnhHao</title>
+            <style>
+                header{
+                    background-color: #bdbab8;
+                    font-size: 1rem;
+                    color: #ffffff;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                ul{
+                    list-style: none;
+                }
+                a{
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.25rem;
+                }
+                a:hover{
+                    color: #4b4b4b;
+                    text-decoration: underline;
+                }
+                p {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #212121;
+                }
+                body {
+                    background-color: #e7e8ec;
+                    width: 1188px;
+                    margin: 1rem;
+                }
+                main{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                .slider {
+                    width: 100%;
+                    background-color: #9aa4b1;
+                    color:#423b3b;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1.5rem;
+                }
+                .box {
+                    width: 188px;
+                    height: 270px;
+                    background-color: #fff;
+                    position: relative;
+                }
+                .box img {
+                    background-color: #f5f5f5;
+                    width: 188px;
+                    height: 188px;
+                }
+                .logo {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    top: 70%;
+                    left: 50%;
+                }
+                .logo img {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border:#606060 solid 1px;
+                }
+                .description_logo {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    top: 85%;
+                    left: 50%;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #212121;
+                }
+                .description {
+                    position: absolute;
+                    top: 88%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: #9e9e9e;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>52400186 - NguyenAnhHao</h1>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.facebook.com/share/1QBx7qqKvC/">My FaceBook</a></li>
+                        <li><a href="https://github.com/JorioJosen">My GitHub</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="slider">
+                    <h2>Technology devices</h2>
+                    <a href="#">> Show All</a>
+                </div>
+                <div class="box">
+                    <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/asus.png">
+                    <p class="description">ASUS</p>
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/asus-logo.png">
+                        <p class="description_logo">ASUS</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/lenovo.png">
+                    <p class="description">Lenovo</p>
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/lenovo-logo.png">
+                        <p class="description_logo">Lenovo</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/acer.png">
+                    <p class="description">Acer</p>
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/acer-logo.png">
+                        <p class="description_logo">Acer</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/iphone.png">
+                    <p class="description">iPhone</p>
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/iphone-logo.png">
+                        <p class="description_logo">iPhone</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/samsung.png">
+                    <p class="description">Samsung</p>
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/samsung-logo.png">
+                        <p class="description_logo">Samsung</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/xiaomi.png">
+                    <p class="description">Xiaomi</p>
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/JorioJosen/Homework/main/images/xiaomi-logo.png">
+                        <p class="description_logo">Xiaomi</p>
+                    </div>
+                </div>
+            </main>
+        </body>
+    </html>
